@@ -10,11 +10,11 @@
 		A9EC49661AC1C61400229EA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC49651AC1C61400229EA7 /* main.m */; };
 		A9EC49691AC1C61400229EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC49681AC1C61400229EA7 /* AppDelegate.m */; };
 		A9EC496C1AC1C61400229EA7 /* agroCentro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9EC496A1AC1C61400229EA7 /* agroCentro.xcdatamodeld */; };
-		A9EC496F1AC1C61400229EA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC496E1AC1C61400229EA7 /* ViewController.m */; };
 		A9EC49721AC1C61400229EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EC49701AC1C61400229EA7 /* Main.storyboard */; };
 		A9EC49741AC1C61400229EA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EC49731AC1C61400229EA7 /* Images.xcassets */; };
 		A9EC49771AC1C61400229EA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EC49751AC1C61400229EA7 /* LaunchScreen.xib */; };
 		A9EC49831AC1C61400229EA7 /* agroCentroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC49821AC1C61400229EA7 /* agroCentroTests.m */; };
+		A9EC499F1AC207FB00229EA7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC499E1AC207FB00229EA7 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +34,14 @@
 		A9EC49671AC1C61400229EA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9EC49681AC1C61400229EA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A9EC496B1AC1C61400229EA7 /* agroCentro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = agroCentro.xcdatamodel; sourceTree = "<group>"; };
-		A9EC496D1AC1C61400229EA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9EC496E1AC1C61400229EA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9EC49711AC1C61400229EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9EC49731AC1C61400229EA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9EC49761AC1C61400229EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9EC497C1AC1C61400229EA7 /* agroCentroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agroCentroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EC49811AC1C61400229EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9EC49821AC1C61400229EA7 /* agroCentroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = agroCentroTests.m; sourceTree = "<group>"; };
+		A9EC499D1AC207FB00229EA7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A9EC499E1AC207FB00229EA7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +83,10 @@
 		A9EC49621AC1C61400229EA7 /* agroCentro */ = {
 			isa = PBXGroup;
 			children = (
+				A9EC498D1AC2022D00229EA7 /* View */,
+				A9EC499C1AC207E200229EA7 /* Controller */,
 				A9EC49671AC1C61400229EA7 /* AppDelegate.h */,
 				A9EC49681AC1C61400229EA7 /* AppDelegate.m */,
-				A9EC496D1AC1C61400229EA7 /* ViewController.h */,
-				A9EC496E1AC1C61400229EA7 /* ViewController.m */,
 				A9EC49701AC1C61400229EA7 /* Main.storyboard */,
 				A9EC49731AC1C61400229EA7 /* Images.xcassets */,
 				A9EC49751AC1C61400229EA7 /* LaunchScreen.xib */,
@@ -120,6 +120,22 @@
 				A9EC49811AC1C61400229EA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9EC498D1AC2022D00229EA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EC499C1AC207E200229EA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC499D1AC207FB00229EA7 /* LoginViewController.h */,
+				A9EC499E1AC207FB00229EA7 /* LoginViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +187,7 @@
 				TargetAttributes = {
 					A9EC495F1AC1C61400229EA7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9E6QYWRYMF;
 					};
 					A9EC497B1AC1C61400229EA7 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -222,9 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EC499F1AC207FB00229EA7 /* LoginViewController.m in Sources */,
 				A9EC49691AC1C61400229EA7 /* AppDelegate.m in Sources */,
 				A9EC496C1AC1C61400229EA7 /* agroCentro.xcdatamodeld in Sources */,
-				A9EC496F1AC1C61400229EA7 /* ViewController.m in Sources */,
 				A9EC49661AC1C61400229EA7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = agroCentro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,9 +377,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = agroCentro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -416,6 +439,7 @@
 				A9EC49881AC1C61400229EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9EC49891AC1C61400229EA7 /* Build configuration list for PBXNativeTarget "agroCentroTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +448,7 @@
 				A9EC498B1AC1C61400229EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
